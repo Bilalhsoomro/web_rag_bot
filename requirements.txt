@@ -6,3 +6,4 @@ beautifulsoup4==4.12.2
 duckduckgo-search==3.8.5
 readability-lxml==0.8.1
 pypdf2
+docx2txt
