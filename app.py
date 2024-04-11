@@ -59,10 +59,10 @@ def init_page():
     st.session_state["openai_api_key"] = st.sidebar.text_input(
         "OpenAI API Key", type="password")
     os.environ["OPENAI_API_KEY"] = st.session_state.openai_api_key
-    st.session_state["agent_type"] = st.sidebar.selectbox("Choose Agent Type", options=["Web Agent", "PDF Agent"])
+    st.session_state["agent_type"] = st.sidebar.selectbox("Choose Agent Type", options=["Web Agent", "RAG Agent"])
     if st.session_state.agent_type == "Web Agent":
         st.header("Web Browsing Conversational Agent")
-    elif st.session_state.agent_type == "PDF Agent":
+    elif st.session_state.agent_type == "RAG Agent":
         st.header("RAG Conversational Agent")
     
     
