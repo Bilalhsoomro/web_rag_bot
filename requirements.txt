@@ -12,3 +12,4 @@ lxml_html_clean
 pypdf2
 faiss-cpu
 langchain_community
+langchainhub
